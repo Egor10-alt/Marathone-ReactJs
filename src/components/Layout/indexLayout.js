@@ -2,8 +2,10 @@ import styleLayout from "./style.module.css";
 
 console.log(styleLayout);
 
-const IndexLayout = ({title,descr,urlBg = false,colorBg}) => {
+const Layout = ({title,urlBg = false,colorBg ,children}) => {
 
+
+    console.log("children",children);
 
     const background = urlBg ? { backgroundImage: `url(${urlBg})` } : { backgroundColor: colorBg }
     console.log("background",background);
@@ -18,7 +20,7 @@ const IndexLayout = ({title,descr,urlBg = false,colorBg}) => {
                         <span className={styleLayout.separator}></span>
                     </div>
                     <div className= {`${styleLayout.desc} ${styleLayout.full}`}>
-                        <p>{descr}</p>
+                        <p>{children}</p>
                     </div>
                 </article>
             </div>
@@ -26,4 +28,4 @@ const IndexLayout = ({title,descr,urlBg = false,colorBg}) => {
     )
 }
 
-export default IndexLayout;
+export default Layout;
