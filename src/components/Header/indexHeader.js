@@ -1,6 +1,6 @@
 import styleHeader from "./style.module.css";
 
-const IndexHeader = ({title , descr})=>{
+const Header = ({title , descr})=>{
 
     return(
         <header className={styleHeader.root}>
@@ -14,4 +14,4 @@ const IndexHeader = ({title , descr})=>{
     )
 }
 
-export default IndexHeader;
+export default Header;

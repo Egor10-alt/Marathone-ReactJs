@@ -1,6 +1,6 @@
 import styleFooter from "./styleFooter.css"
 
-const IndexFooter = ()=>{
+const Footer = ()=>{
     return(
         <footer>
             <div className={styleFooter.wrapper}>
@@ -12,4 +12,4 @@ const IndexFooter = ()=>{
 
 }
 
-export default IndexFooter;
+export default Footer;
